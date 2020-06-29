@@ -408,10 +408,10 @@ body{
     border-radius: 0;
     margin-bottom: 2rem;
     height: 3.5rem;
-    color: red;
+    color: #aaa;
 }
 .text-light{
-    color: red;
+    color: #aaa;
 }
 .contact-form:focus{
     box-shadow: none;
