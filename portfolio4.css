@@ -466,7 +466,7 @@ body{
     }
     .def-navbar {
         backdrop-filter: blur(8px);
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(0, 0, 0, 0.5);
         /* padding-bottom: 15rem; */
     }
     .def-navbar .navbar-nav li:last-child{
