@@ -408,7 +408,10 @@ body{
     border-radius: 0;
     margin-bottom: 2rem;
     height: 3.5rem;
-    color: #888;
+    color: red;
+}
+.text-light{
+    color: red;
 }
 .contact-form:focus{
     box-shadow: none;
@@ -521,6 +524,15 @@ body{
     
 }
 @media(max-width : 517px) {
+    .intro-body{
+        padding-top: 5rem;
+        padding-left: 1rem;
+    }    
+    .intro-img{
+        width: 585px;
+        height: 500px;
+        margin-bottom: 1rem;
+    }    
     .intro-text p {
         font-size: 20px;
         line-height: 23px;
