@@ -480,6 +480,14 @@ body{
         width: 143px;
         font-size: 12px;
     }
+    .intro-text h3 {
+        font-family: Lato;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: .03rem;
+    }
+    
     
     
 }
