@@ -173,6 +173,9 @@ body{
     color: whitesmoke;
     box-shadow: 1px 1px 3px #fff;
 }
+.text-slider-items{
+    display: none;
+}
 
 
 
@@ -318,9 +321,10 @@ body{
 /*------------------------------------------- My Services-----------------------------------*/
 #service{
     background:  #212121;
-    padding: 4rem 0 3rem 0;
+    padding: 3rem 0 2rem 0;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
 }
 .service-box {
     justify-content: center;
@@ -375,14 +379,30 @@ body{
     padding: 4rem 0 3rem 0;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
 }
 .works-img{
-    background-size: contain;
     box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
     height: 327px;
     width:100%;
-    margin-bottom: 2rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
 }
+.works-img:hover{
+    transform: scale(1.05);
+}
+.works-box{
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.works-view {
+    position: absolute;
+    bottom: 1rem;
+    left: 88%;
+    color: #FF7A00;
+}
+
 
 
 
@@ -408,10 +428,10 @@ body{
     border-radius: 0;
     margin-bottom: 2rem;
     height: 3.5rem;
-    color: #aaa;
+    color: #C4C4C4;
 }
 .text-light{
-    color: #aaa;
+    color: #C4C4C4;
 }
 .contact-form:focus{
     box-shadow: none;
@@ -434,12 +454,23 @@ body{
 
 
   /*------------------------------------- Media Queries ---------------------------------*/
+@media(max-width: 2000px){
+    .progress-wrapper {
+        position: absolute;
+        top: 64rem;
+        right: 15rem;
+    }    
+}
 @media(max-width: 1440px){
     .progress-wrapper {
         position: absolute;
         top: 65rem;
         right: 5rem;
-    }    
+    }   
+    .progress-container {
+        padding-left: 2rem;
+    }
+ 
 }
 @media(max-width: 1280px){
     .progress-wrapper {
@@ -461,6 +492,9 @@ body{
     }
 }
 @media(max-width: 992px){
+    .progress-container {
+        padding-left: 1.3rem;
+    }
     .intro-text{
         margin-top: 7rem;
     }
@@ -473,6 +507,12 @@ body{
     .progress .progress-value {
         font-size: 18px;
     }
+    .progress-wrapper {
+        position: absolute;
+        top: 68rem;
+        right: 5rem;
+    }    
+
 }
 @media(max-width : 768px) {
     .progress-wrapper {
@@ -483,6 +523,9 @@ body{
     }        
 }
 @media(max-width : 767px) {
+    .progress-container {
+        padding-left: initial;
+    }
     .def-navbar .navbar-nav li{
         margin: 2rem auto 1rem auto;
     }
@@ -520,7 +563,10 @@ body{
         width: 220.52px;
         height: 250.41px;
     }
-    
+    #works {
+        background: #212121;
+        margin-top: 0;
+    }    
     
 }
 @media(max-width : 517px) {
@@ -571,6 +617,18 @@ body{
     .section-line {
         width: 169px;
     }
-    
+    .works-img{
+        box-shadow: 0px 6px 45px rgba(0, 0, 0, 0.25);
+        height: 289px;
+        width:100%;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }  
+    #footer p{
+        font-family: Raleway;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+    }      
         
 }
