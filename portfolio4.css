@@ -409,7 +409,7 @@ body{
 /*----------------------------------------Contact Me------------------------------------*/
 #contact{
     background:  #212121;
-    padding: 4rem 0 3rem 0;
+    padding: 2rem 0 3rem 0;
 }
 .contact-link {
     font-family: Raleway;
@@ -570,6 +570,10 @@ body{
     
 }
 @media(max-width : 517px) {
+    .contact-link {
+        font-size: 16px;
+        line-height: 19px;
+    }    
     .intro-body{
         padding-top: 5rem;
         padding-left: 1rem;
