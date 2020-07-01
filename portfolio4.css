@@ -617,5 +617,11 @@ body{
         line-height: 16px;
         letter-spacing: 0.03em;
     }      
-        
+    .works-view {
+        position: absolute;
+        bottom: 3rem;
+        left: 88%;
+        color: #FF7A00;
+    }
+    
 }
